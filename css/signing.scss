@@ -1,0 +1,157 @@
+@font-face {
+  font-family: poppins;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+
+@font-face {
+  font-family: ABeeZee;
+  src: url(../fonts/ABeeZee/ABeeZee-Regular.ttf) format('truetype');
+  font-weight: 400;
+  font-style: normal
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: ABeeZee, sans-serif;
+}
+
+p{
+  margin: unset;
+}
+
+.main{
+  background-color: rgb(245, 245, 245);
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+  margin-top: 120px;
+
+  .form{
+    background-color: white;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    width: 550px;
+    padding: 40px 80px;
+
+    @media screen and (max-width: 590px) {
+      width: 90%;
+      padding: 40px;
+    }
+
+    form{
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .box{
+
+        .name{
+          font-size: 14px;
+        }
+        .inp{
+          background: rgb(246, 246, 246);
+          border: 1px solid rgb(219, 219, 219);
+          border-radius: 2px;
+          box-sizing: border-box;
+          display: flex;
+          align-items: center;
+          padding: 0 10px;
+          input{
+            background: transparent;
+            color: rgb(34, 34, 34);
+            width: 100%;
+            border: none;
+            outline: none;
+            font-size: 14px;
+          }
+          i{
+            font-size: 20px;
+          }
+        }
+        button{
+          font-family: poppins, sans-serif;
+          border: none;
+          width: 100%;
+          text-align: center;
+          text-transform: uppercase;
+          height: 44px;
+          border-radius: 2px;
+          background-color: #939191eb;
+          color: white;
+          font-size: 14px;
+        }
+      }
+
+      .db_box{
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+
+        @media screen and (max-width: 500px) {
+          flex-direction: column;
+        }
+
+
+      }
+      .db_box_radio{
+        
+
+
+        .name{
+          font-size: 14px;
+        }
+        .box{
+
+
+          .inp{
+            display: flex;
+            gap: 20px;
+            background: transparent;
+            align-items: center;
+            height: 50px;
+
+
+            label{
+              display: flex;
+              align-items: center;
+              gap: 8px;
+              margin: unset;
+            }
+
+            input[type="radio"]{
+              width: unset;
+            }
+
+            p{
+              font-size: 13px;
+            }
+          }
+        }
+
+
+
+
+      }
+    }
+
+    .form_ft{
+      text-align: center;
+      margin-top: 30px;
+      p{
+        font-size: 13px;
+        color: black;
+      }
+      a{
+        font-size: 13px;
+        color: rgb(46, 150, 217);
+      }
+    }
+
+
+  }
+
+}
